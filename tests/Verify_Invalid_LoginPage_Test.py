@@ -15,6 +15,7 @@ class Test_Invalid_LoginPage(BaseClass):
         self.waitforthreeSecond()
         invalidloginpage.clickonloginbutton()
         self.waitforthreeSecond()
+        self.waitforthreeSecond()
         invalidloginpageerrormsg = Invalid_LoginPage(self.driver)
         self.waitforthreeSecond()
         invalidloginpageerrormsg.verify_error_msg()
